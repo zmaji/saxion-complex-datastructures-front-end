@@ -1,0 +1,12 @@
+.checked-list {
+  padding-left: 0;
+  li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    background: url("../img/checkmark.svg") no-repeat left center;
+    background-size: 2.25rem;
+    padding-left: 3rem;
+    margin-bottom: .5rem;
+  }
+}
