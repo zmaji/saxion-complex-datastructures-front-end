@@ -1,0 +1,54 @@
+.btn {
+  &-primary,
+  &-secondary,
+  &-tertiary {
+    color: white !important;
+  }
+
+  &-outline, {
+    &-primary {
+      color: $primary;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: white;
+      }
+    }
+
+    &-secondary {
+      color: $secondary;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: white;
+      }
+    }
+
+    &-tertiary {
+      color: $tertiary;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: white;
+      }
+    }
+  }
+
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+
+  &:hover,
+  &:focus,
+  &:active {
+    &-primary,
+    &-secondary,
+    &-tertiary {
+      color: white !important;
+    }
+
+    text-decoration: none;
+  }
+}
