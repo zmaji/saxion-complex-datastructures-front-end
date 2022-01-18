@@ -15,14 +15,26 @@
                 <li class="nav-item">
                     <a class="nav-link" on:click={() => router.redirect('/')}>Guide</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" on:click={() => router.redirect('/homes')}>Homes</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Homes</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item nav-link" on:click={() => router.redirect('/homes')}>All homes</a></li>
+                        <li><a class="dropdown-item nav-link" on:click={() => router.redirect('/homes/top-maintenance')}>Top maintenance</a></li>
+                    </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" on:click={() => router.redirect('/waitinglist')}>Waitinglist</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Waiting list</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item nav-link" on:click={() => router.redirect('/waiting-list')}>Waiting list</a></li>
+                        <li><a class="dropdown-item nav-link" on:click={() => router.redirect('/waiting-list/qualified')}>Qualified client homes</a></li>
+                    </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" on:click={() => router.redirect('/complaints')}>Complaints</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Complaints</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item nav-link" on:click={() => router.redirect('/complaints')}>Complaints</a></li>
+                        <li><a class="dropdown-item nav-link" on:click={() => router.redirect('/complaints/complaint-frequency')}>Complaint frequency</a></li>
+                    </ul>
                 </li>
             </ul>
         </div>

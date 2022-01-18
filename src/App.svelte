@@ -3,11 +3,21 @@
 	import Nav from "./components/layout/Nav.svelte";
 	import Home from "./pages/Home.svelte";
 	import Homes from "./pages/Homes.svelte";
+	import TopMaintenanceHomes from "./pages/TopMaintenanceHomes.svelte";
+	import Complaints from "./pages/Complaints.svelte";
+	import ComplaintFrequency from "./pages/ComplaintFrequency.svelte";
+	import WaitingList from "./pages/WaitingList.svelte";
+	import WaitingListQualified from "./pages/WaitingListQualified.svelte";
 
 	let page;
 
 	router('/', () => page = Home);
 	router('/homes', () => page = Homes);
+	router('/homes/top-maintenance', () => page = TopMaintenanceHomes);
+	router('/complaints', () => page = Complaints);
+	router('/complaints/complaint-frequency', () => page = ComplaintFrequency);
+	router('/waiting-list', () => page = WaitingList);
+	router('/waiting-list/qualified', () => page = WaitingListQualified);
 
 	router.start();
 </script>
