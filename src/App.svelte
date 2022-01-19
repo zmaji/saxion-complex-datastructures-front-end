@@ -1,13 +1,13 @@
 <script>
 	import router from "page";
 	import Nav from "./components/layout/Nav.svelte";
-	import Home from "./pages/Home.svelte";
-	import Homes from "./pages/Homes.svelte";
-	import TopMaintenanceHomes from "./pages/TopMaintenanceHomes.svelte";
-	import Complaints from "./pages/Complaints.svelte";
-	import ComplaintFrequency from "./pages/ComplaintFrequency.svelte";
-	import WaitingList from "./pages/WaitingList.svelte";
-	import WaitingListQualified from "./pages/WaitingListQualified.svelte";
+	import Home from "./pages/Home/Home.svelte";
+	import Homes from "./pages/Home/Homes.svelte";
+	import TopMaintenanceHomes from "./pages/Home/TopMaintenanceHomes.svelte";
+	import Complaints from "./pages/Complaint/Complaints.svelte";
+	import ComplaintFrequency from "./pages/Complaint/ComplaintFrequency.svelte";
+	import WaitingList from "./pages/Client/WaitingList.svelte";
+	import WaitingListQualified from "./pages/Client/WaitingListQualified.svelte";
 
 	let page;
 

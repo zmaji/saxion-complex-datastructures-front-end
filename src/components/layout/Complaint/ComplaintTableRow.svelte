@@ -10,5 +10,5 @@
     <td>{complaint.estimatedTime}</td>
     <td>{complaint.actualTime}</td>
     <td>€ {complaint.otherCosts}</td>
-    <td>{complaint.homeID}</td>
+    <td>{complaint.homeId}</td>
 </tr>
