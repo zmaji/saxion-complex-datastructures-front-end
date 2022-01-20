@@ -1,34 +1,34 @@
 <script>
-    import ComplaintTable from "../components/ComplaintTable.svelte";
+    import HomeTable from "../../components/layout/Home/HomeTable.svelte";
 
-    let complaints = [];
+    let homes = [];
 
-    const fetchComplaints = (async () => {
-        const response = await fetch('http://localhost:8080/complaints');
+    const fetchHomes = (async () => {
+        const response = await fetch('http://localhost:8080/homes');
         const result = await response.json();
-        complaints = result;
-        console.log(complaints)
+        homes = result;
+        console.log(homes)
 
         return result;
     })();
 </script>
 
-{#await fetchComplaints}
+{#await fetchHomes}
     <div class="alert alert-primary" role="alert">
-        Fetching complaints...
+        Fetching homes...
     </div>
-{:then complaints}
-    {#if complaints.length > 0 }
-        <ComplaintTable {complaints}/>
+{:then homes}
+    {#if homes.length > 0 }
+        <HomeTable {homes}/>
     {:else}
         <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            No complaints found...
+            No homes found...
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
     {/if}
 {:catch error}
     <div class="alert alert-danger alert-dismissible fade show" role="alert">
-        Failed to fetch complaints...
+        Failed to fetch homes...
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 {/await}

@@ -1,5 +1,5 @@
 <script>
-    import WaitingListTable from "../components/WaitingListTable.svelte";
+    import WaitingListTable from "../../components/layout/Client/WaitingListTable.svelte";
 
     let waitingList = [];
 

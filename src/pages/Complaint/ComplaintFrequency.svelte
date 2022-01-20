@@ -1,5 +1,5 @@
 <script>
-    import ComplaintTable from "../components/ComplaintTable.svelte";
+    import ComplaintTable from "../../components/layout/Complaint/ComplaintTable.svelte";
 
     let complaints = [];
 

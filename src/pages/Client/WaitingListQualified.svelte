@@ -1,5 +1,5 @@
 <script>
-    import QualifiedClientHomeTable from "../components/QualifiedClientHomeTable.svelte";
+    import QualifiedClientHomeTable from "../../components/layout/Client/QualifiedClientHomeTable.svelte";
 
     let qualifiedClientHomes = [];
 
