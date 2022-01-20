@@ -11,7 +11,7 @@
 
 	let page;
 
-	router('/', () => page = Home);
+	router('/', () => router.redirect('/homes'));
 	router('/homes', () => page = Homes);
 	router('/homes/top-maintenance', () => page = TopMaintenanceHomes);
 	router('/complaints', () => page = Complaints);

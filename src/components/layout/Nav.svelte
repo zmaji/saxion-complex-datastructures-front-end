@@ -4,7 +4,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top border-top border-4 border-primary shadow">
     <div class="container">
-        <a class="navbar-brand" on:click={() => router.redirect('/')} href="/">
+        <a class="navbar-brand" on:click={() => router.redirect('/homes')} href="/">
             <img src="/img/saxion-logo.jpg" alt="" width="100">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,9 +12,6 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" on:click={() => router.redirect('/')}>Guide</a>
-                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Homes</a>
                     <ul class="dropdown-menu">
